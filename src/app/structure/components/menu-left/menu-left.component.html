@@ -1,0 +1,31 @@
+<nav class="cat__menu-left menu-left_horizontal">
+    <div class="cat__menu-left__lock cat__menu-left__action--menu-toggle">
+        <div class="cat__menu-left__pin-button">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="cat__menu-left__logo" style="padding-top: .75rem !important;">
+        <a>
+            <img style="width: 80% !important;" alt="logo" src="assets/images/images.png" />
+        </a>
+    </div>
+    <div class="cat__menu-left__inner">
+        <ul class="cat__menu-left__list cat__menu-left__list--root">
+            <li class="cat__menu-left__item " [routerLinkActive]="['cat__menu-left__item--active']">
+                <a [routerLink]="DASHBOARD_URL">
+                    <span class="cat__menu-left__icon icmn-home"></span> Dashboard
+                </a>
+            </li>
+            <li class="cat__menu-left__item " [routerLinkActive]="['cat__menu-left__item--active']">
+                <a [routerLink]="EWALLET_URL">
+                    <span class="cat__menu-left__icon fa fa-credit-card"></span> E-Wallets
+                </a>
+            </li>
+            <!-- <li class="cat__menu-left__item " [routerLinkActive]="['cat__menu-left__item--active']">
+                <a [routerLink]="EWALLET_URL">
+                    <span class="cat__menu-left__icon">EV</span> Events
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</nav>
